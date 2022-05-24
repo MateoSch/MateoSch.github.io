@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'gotham-black', 'arial';
+}
+
+body {
+
+    background-color: #1f1f1f;
+}
+
+.menu {
+    background-color: rgb(14, 14, 14);
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    box-shadow: 5px 0 25px rgba(12, 0, 34, 0.288);
+}
+
+.logo {
+    font-family: 'gotham-black', sans-serif;
+    color: snow;
+    padding: 0 50px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu-items {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+
+}
+
+.menu-items li {
+    border-radius: 3px;
+    margin: 5px;
+}
+
+.menu-items li a {
+
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    text-transform: uppercase;
+    color: snow;
+    font-family: 'gotham-black';
+}
+
+.menu-items li:hover, li.active {
+    background-color: rgba(51, 51, 51, 0.466);
+    transition: .7s;
+
+}
+
+#menuBoton {
+    margin-right: 30px;
+    font-size: 25px;
+    color: snow;
+    cursor: pointer;
+    display: none;
+}
+
+ul.show {
+    top: 65px;
+}
+
+@media screen and (max-width: 952px) {
+    .logo {
+        font-size: 30px;
+        padding-left: 35px;
+    }
+
+    .menu-items li a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 859px) {
+    .menu {
+        height: 65px;
+    }
+
+    #menuBoton {
+        display: inline-flex;
+    }
+
+    .menu-items {
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        background-color: rgb(20, 20, 20);
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+
+    .menu-items {
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+
+    .menu-items li:hover {
+        background-color: none;
+    }
+
+    .menu-items li a {
+        font-size: 20px;
+        color: snow;
+        font-weight: bold;
+    }
+
+    .menu-items li a:hover {
+        color: rgb(20, 20, 20);
+
+    }
+
+    .logo {
+        font-size: 25px;
+        padding-left: 35px;
+    }
+}
+
+/* para que tolere el contenido en celulares de forma apaisada*/
+
+@media screen and (max-width: 858px) and (orientation: landscape) {
+    .menu-items li {
+        margin: 5px 0 0 0;
+    }
+
+    .menu-items {
+        overflow: scroll;
+        height: calc(100% - 65px);
+    }
+}
+
+
+.seccionInicio {
+    width: 100%;
+    height: 100vh;
+    color: rgb(153, 153, 153);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.cajasInicio {
+
+    width: 75vw;
+    height: 12vh;
+    background-color: rgb#1f1f1f;
+    border-color: rgb(85, 85, 85);
+    border-style: solid;
+    border-width: 0.5px;
+    overflow-y: auto;
+
+}
+/*--------------podcasts-----------*/
+
+
+
+
+/*--------------footer-------------*/
+
+.pie-pagina {
+    justify-content: end;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.pie-pagina .grupo1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo1 .caja figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pie-pagina .grupo1 .caja figure img {
+    width: 100px;
+}
+
+.pie-pagina .grupo1 .caja h2 {
+    color: snow;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo1 .caja p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo1 .redsocial a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: snow;
+    margin-right: 10px;
+    background-color: rgb(54, 83, 83);
+    text-align: center;
+    transition: all 150ms ease;
+    border-radius: 6px;
+}
+
+.pie-pagina .grupo1 .redsocial a:hover {
+    color: black;
+}
+
+.pie-pagina .grupo2 {
+    background-color: #0a1a2a;
+    ;
+    padding: 15px 10px;
+    text-align: center;
+    color: snow;
+}
+
+.pie-pagina .grupo2 small {
+    font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    .pie-pagina .grupo1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
