@@ -27,6 +27,24 @@
     </nav>
 
     <main>
+        <section>
+            <form class="formulario" method="post" action="#">
+                <h3>COMPLETA LOS DATOS Y PARTICIPÁ EN NUESTRA PLATAFORMA</h3>
+                <label for="nomYap">Nombre y Apellido:</label>
+                <input class="controles" maxlength="35" minlength="5" type="text" name="nomYap" required="" pattern="[a-zA-Z]+" title="Campo Obligatorio">
+                <br>
+                <label for="letras">Nombre Artístico:</label>
+                <input class="controles" type="text" name="letras" title="Campo Obligatorio" required>
+                <br>
+                <label for="insta">Instagram:</label>
+                <input class="controles" type="text" name="insta" required title="Campo Obligatorio" placeholder="Tu nombre de usuario sin el @">
+                <br>
+                <label class="motivosEncuesta" id="" for="motivos">¿Cómo conociste Plastik? ¿Por qué te gustaría participar de nuestros Podcast? A continuacion podes pegar links con tus producciones o sets que tengas disponibles para escuchar. Además, te damos la libertad de que nos cuentes lo que quieras sobre vos.</label>
+                <textarea name="motivos" class="controles" id="motivos" cols="60" rows="10" maxlength="1000" minlength="20" autocapitalize="sentences" title="Campo Obligatorio" required placeholder="Podes pegar links de SoundCloud, Youtube, Spotify o Google Drive."></textarea>
+                <br>
+                <input class="botonForm" type="submit" value="ENVIAR">
+            </form>
+        </section>
 
     </main>
     
@@ -41,7 +59,7 @@
             </div>
             <div class="caja">
                 <h2>SOBRE NOSOTROS</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, qui.</p>
+                <p>Somos un ciclo de Música Electrónica, situado en la ciudad de General Belgrano, provincia de Buenos Aires, Argentina.</p>
             </div>
             <div class="caja">
                 <h2>SIGUENOS</h2>
