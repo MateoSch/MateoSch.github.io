@@ -260,7 +260,6 @@ ul.show {
     display: grid;
     grid-template-columns: repeat(auto-fit , minmax(300px, 1fr));
     grid-gap: 1rem;
-
 }
 
 .youtubePod{
@@ -282,12 +281,6 @@ ul.show {
     color: snow;
 }
 
-#caja-especial{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
 
 
 
@@ -295,7 +288,7 @@ ul.show {
 /*------------------------------PARTICIPÁ--------------------------------*/
 
 .formulario{
-    font-size: 62,5%;
+
     height: auto;
     width: auto;
     background: #1b232c;
@@ -331,7 +324,7 @@ ul.show {
     padding: 10px;
     border-radius: 4px;
     border: 1px solid #00000086;
-    font-family: 'fantasy';
+    font: 'fantasy';
     font-size: 18px;
     color: snow;
 }
@@ -353,4 +346,74 @@ ul.show {
 
 #motivosEncuesta{
     text-align: justify;
+}
+
+
+
+/*---------------------------REDES---------------------------*/
+
+main{
+    height:100vh;
+    display:grid;
+    align-items:center;
+    justify-content:center;
+}
+
+.seccionRedes{
+    width:100%;
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.cajaIcon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 50px;
+    border-radius: 50%;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.cajaIcon:hover:nth-child(1) {
+
+    background-color: #b30000;
+    box-shadow:  0 0 20px #000;
+}
+
+.cajaIcon:hover:nth-child(2) {
+
+    background-color: #c03d00;
+    box-shadow:  0 0 20px #000;
+}
+
+.cajaIcon:hover:nth-child(3) {
+
+    background-color: #96005c;
+    box-shadow:  0px 0px 20px #000;
+}
+
+
+
+#iconosRedes {
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.7rem;
+}
+
+svg circle {
+
+    stroke-dasharray: 150;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+
+}
+
+.cajaIcon:hover circle {
+    stroke-dasharray: 220;
 }
